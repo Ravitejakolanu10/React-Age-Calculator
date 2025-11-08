@@ -1,0 +1,129 @@
+/* ===== App.css ===== */
+
+/* Centered Glassy Container */
+.container {
+  width: 90%;
+  max-width: 420px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 40px 30px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Heading */
+.heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.para {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+/* Inner Section */
+.container_middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Input */
+.date {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-weight: 500;
+}
+
+/* Buttons */
+.button_div {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.button-65 {
+  background: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #2575fc;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button-65:hover {
+  background: #2575fc;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Result Section */
+.left {
+  margin-top: 25px;
+}
+
+.container_middle_para h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.age_heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffdf00;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .button_div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button-65 {
+    width: 100%;
+  }
+
+  .age_heading {
+    font-size: 2.5rem;
+  }
+}

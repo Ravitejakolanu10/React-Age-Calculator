@@ -1,0 +1,33 @@
+/* ===== index.css ===== */
+
+/* Import a nice font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global body setup */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* Smooth animations */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove React root default margin */
+#root {
+  width: 100%;
+}
